@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekFolio | Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <div class="flex">
+            <a href="#"><img src="./Img/logo-dark.png" alt="GeekFolio Logo" class="logo"></a>
+            <div class="nav_btn"><img src="./Img/icon-menu.svg" alt="Nav_Toogle"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Porfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="col">
+                <h2 class="hero_title"><span class="clr-orange">Better</span> Design For Your Digital Products</h2>
+                <div>
+                    <p class="hero_text">We are a creative studio specializing in UI/UX design, development and strategy.</p>
+                    <a href="#" class="btn">Explore More</a>
+                </div>
+            </div>
+            <div class="col"><img class="hero_img" src="./Img/banner.png" alt="Hero_Banner Image"></div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="about_content">
+            <div class="col"><img class="about_img" src="./Img/section.png" alt="About_Banner Image"></div>
+            <div class="col text-center">
+                <h2>About Us</h2>
+                <div class="mt-5">
+                    <h4 class="about_title">We grow brands through bold & strategic creative</h4>
+                    <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo assumenda veritatis dignissimos recusandae reprehenderit illo!</p>
+                    <a href="#" class="btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service text-center">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service_content">
+                <div class="card">
+                    <div class="bg-clr"><img src="./Img/0.png" alt="Digital_Art"></div>
+                    <div>
+                        <h3 class="card_title">Digital Art</h3>
+                        <p class="card_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi beatae obcaecati non odit repellendus explicabo, similique praesentium cum dicta, qui quibusdam at ex, aliquid ipsam?</p>
+                        <a href="#" class="btn">More Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="bg-clr"><img src="./Img/1.png" alt="Web_Design"></div>
+                    <div>
+                        <h3 class="card_title">Web Design</h3>
+                        <p class="card_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi beatae obcaecati non odit repellendus explicabo, similique praesentium cum dicta, qui quibusdam at ex, aliquid ipsam?</p>
+                        <a href="#" class="btn">More Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="bg-clr"><img src="./Img/2.png" alt="Digital_Art"></div>
+                    <div>
+                        <h3 class="card_title">Digital Marketing</h3>
+                        <p class="card_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi beatae obcaecati non odit repellendus explicabo, similique praesentium cum dicta, qui quibusdam at ex, aliquid ipsam?</p>
+                        <a href="#" class="btn">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="col">
+                    <img src="./Img/logo-light.png" alt="GeekFolio Logo" class="logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at pariatur ea nisi veniam officiis.</p>
+                </div>
+                <div class="col">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News and Article</a></li>
+                        <li><a href="#">Legal Notice</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Supports</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">parent Community</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Contact Information</h3>
+                    <p class="contact">Feel free to contact & reach us: 3557 Derek Drive, Orlando, Florida +1(456)657-887 info@domain.com</p>
+                </div>
+            </div>
+            <hr class="footer_line">
+            <div class="text-center">&copy; Obi Faith | All rights reserved</div>
+        </div>
+    </footer>
+
+    <script>
+        const nav = document.querySelector('nav');
+        const navToggle = document.querySelector('.nav_btn');
+        navToggle.addEventListener('click', ()=>{
+            nav.classList.toggle('nav_visible');
+        })
+    </script>
+</body>
+</html>

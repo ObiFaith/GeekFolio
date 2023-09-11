@@ -1,0 +1,53 @@
+:root{--clr-orange: rgb(255, 94, 58); --clr-dark: #333}
+*::before, *, *::after{box-sizing: border-box; margin: 0; padding-top: 0;}
+a{text-decoration: none;}
+body{font: 20px/1.4 "Hind Siliguri", sans-serif; color: #222;}
+ul{list-style: none; padding: 0;}
+img{max-width: 100%;}
+.btn{display: inline-block; background-color: var(--clr-orange); color: #fff; padding: .5rem .9rem; border-radius: .2rem; margin-top: .5rem}
+.btn:hover, .btn:focus{opacity: .9;}
+.bg-clr{background-color: var(--clr-orange);}
+.clr-orange{color: var(--clr-orange)}
+.container{width: min(960px, 80%); margin-inline: auto;}
+.flex{display: flex; justify-content: space-between; align-items: center;}
+.logo{max-width: 10rem; margin-top: 1rem;}
+.text-center{text-align: center;}
+header{padding: .5rem 0 .7rem;}
+nav, section .hero_img, section .about_img{text-align: center; display: none;}
+.nav_visible{display: block; padding-block: 1rem;}
+nav li + li{padding-top: .5rem}
+nav a{color: var(--clr-dark);}
+.nav_btn{display: inline-block; padding: .5rem .8rem .2rem; border-radius: 5px;
+    background: linear-gradient(25deg, #fff, var(--clr-orange));}
+section, footer{padding-block: 3.5rem;}
+section.hero{background: linear-gradient(175deg, #fff, rgb(255, 165, 160)); text-align: center;}
+section .hero_title{font-size: clamp(2.2rem, 2.5vw, 2.5rem); line-height: 1.2;}
+section .hero_text{padding: 1.4rem 0 2rem; text-wrap: balance}
+.about_title, .about_text, .card .bg-clr
+.about_text + div, .card_title{padding: .5rem 0;}
+section.service{background-color: #ececec; font-size: 17px;}
+section.service .card{background-color: #fff; padding: .5rem .5rem 2rem;}
+section.service .bg-clr >img{width: 10rem; padding: 1.375rem 0 1rem;}
+section.service .card, section.service .bg-clr{ border-radius: .5rem;}
+section.service .card + .card{margin-top: 1.5rem;}
+footer{background-color: #111;}
+footer, footer a{color: #fff; font-size: 16px;}
+footer ul, footer .contact{padding-top: .3rem;}
+nav a:hover, nav a:focus,
+footer a:hover, footer a:focus{color: var(--clr-orange);}
+.footer div + div{padding-top: 1.3rem}
+footer .footer_line{margin-block: 1.5rem; color: #fff;}
+
+@media screen and (min-width: 800px) {
+    .nav_btn{display: none;}
+    nav li + li, .footer div + div{padding: 0;}
+    .col, .card{width: 100%;}
+    .hero{padding: 2rem 0}
+    .mt-5,.about_content .btn, .service_content{margin-top: 2rem;}
+    nav, section .hero_img, section .about_img{display: inline-block;}
+    header, nav ul, .service_content, .footer{justify-content: space-between; gap: 1rem}    
+    header, .hero .container, .about_content,nav ul, .service_content, .footer{display: flex; align-items: center; }
+    .hero .container, .about_content, .about_title, .about_text{text-align: left;}
+    section.service .card + .card{margin: 0;}
+    .footer{align-items: flex-start;}
+}
