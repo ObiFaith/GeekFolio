@@ -10,7 +10,7 @@
     <header class="container">
         <div class="flex">
             <a href="#"><img src="./Img/logo-dark.png" alt="GeekFolio Logo" class="logo"></a>
-            <div class="nav_btn"><img src="./Img/icon-menu.svg" alt="Nav_Toogle"></div>
+            <div class="nav_btn"><img class="nav_btn--img" src="./Img/icon-menu.svg" alt="Nav_Toogle"></div>
         </div>
         <nav>
             <ul>
@@ -115,8 +115,10 @@
     <script>
         const nav = document.querySelector('nav');
         const navToggle = document.querySelector('.nav_btn');
+        const menuImg = document.querySelector('.nav_btn--img');
         navToggle.addEventListener('click', ()=>{
             nav.classList.toggle('nav_visible');
+            nav.classList.contains('nav_visible') ? menuImg.src = './Img/icon-close.svg' : menuImg.src = './Img/icon-menu.svg';
         })
     </script>
 </body>
